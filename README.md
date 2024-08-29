@@ -1,2 +1,2 @@
-# dotfiles-river
-my dotfiles for riverwm
+# dotfiles
+my dotfiles
