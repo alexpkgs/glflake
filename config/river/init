@@ -72,6 +72,4 @@ done
 # -- Startup Applications --
 
 riverctl spawn mako
-riverctl spawn waybar
-riverctl spawn dunst
 riverctl spawn swww-daemon
