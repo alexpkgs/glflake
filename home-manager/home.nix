@@ -12,7 +12,6 @@
     ./rofi/default.nix
     ./qutebrowser/default.nix
     ./bash/default.nix
-    ./dunst/default.nix
   ];
 
   # Set the Home Manager state version
