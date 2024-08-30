@@ -45,13 +45,13 @@ in {
       editor.command = ["kitty" "-e" "nvim" "{file}"];
       content.javascript.clipboard = "access-paste";
       fonts = {
-        default_family = ["Fira Code Nerd Font" "PlemolJP35 Console HS"];
+        default_family = ["Fira Code Light" "Fira Code Light"];
         default_size = "13px";
         web.family = {
-          sans_serif = "PlemolJP35 Console HS";
-          serif = "Noto Sans CJK JP";
-          fixed = "PlemolJP35 Console HS";
-          standard = "PlemolJP35 Console HS";
+          sans_serif = "Fira Code Light";
+          serif = "Fira Code Light";
+          fixed = "Fira Code Light";
+          standard = "Fira Code Light";
         };
       };
       content.blocking.method = "both";
