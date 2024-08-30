@@ -4,19 +4,18 @@
     icons = true;
     sort = "-time";
     layer = "overlay";
-    anchor = "bottom-right";
+    anchor = "top-left";
     width = 400;
-    height = 230;
-    padding = "16";
+    height = 400;
+    padding = "10";
     margin = "10,10,10";
     output = "HDMI-A-1";
-    backgroundColor = "#191c25";
-    textColor = "#c5c4d4";
-    borderColor = "#77adb1";
-    borderSize = 2;
-    borderRadius = 6;
+    backgroundColor = "#101010";
+    textColor = "#ffffff";
+    borderSize = 0;
+    borderRadius = 0;
     defaultTimeout = 5000;
-    font = "PlemolJP35 Console HS 13px";
+    font = "uzura_font 12px";
 
     extraConfig = ''
       format=<b>%s</b>\n\n%b
