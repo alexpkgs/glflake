@@ -1,5 +1,5 @@
 {
-  description = "My system configuration";
+  description = "flake idk wtf am i doing lolll";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -31,7 +31,7 @@
       ];
     };
 
-    homeConfigurations.poe = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations.alex = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
       modules = [ ./home-manager/home.nix ];
     };
