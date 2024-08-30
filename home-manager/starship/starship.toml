@@ -1,0 +1,45 @@
+format = """
+[╭](white) $username@$hostname [─────](white) $directory$git_branch $git_status
+[╰─](white) $cmd_duration$status """
+
+right_format = """
+$time\
+"""
+
+add_newline = true
+
+[username]
+style_user = 'green bold'
+style_root = 'red bold'
+format = '[$user]($style)'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '[$hostname](bold yellow)'
+disabled = false 
+
+[git_branch]
+format = "[ $branch](red)"
+
+[directory]
+style = "fg bold"
+
+[status]
+disabled = false
+
+symbol = "[❯](bold red)"
+success_symbol = "[❯](bold green)"
+format = "$symbol"
+
+[time]
+disabled = false
+format = "[$time]($style)"
+time_format = "%R"
+utc_time_offset = "local"
+style = "white"
+
+[cmd_duration]
+min_time = 500
+format = "took [$duration ](italic bright-yellow)"
