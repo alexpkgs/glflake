@@ -1,2 +1,1 @@
-# dotfiles
-my dotfiles
+Welcome To My Dotfiles (for nix)
