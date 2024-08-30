@@ -5,10 +5,10 @@
       main = {
         app-id = "foot";
         title = "foot";
-        font = "uzura_font:size=12,mplus12:size=12";
-        font-bold = "uzura_font:size=12:size=12";
-        font-italic = "uzura_font:size=12,size=12";
-        font-bold-italic = "uzura_font:size=12";
+        font = "Fira Code Light:size=10,mplus10:size=10";
+        font-bold = "Fira Code Light:size=10:size=10";
+        font-italic = "Fira Code Light:size=10,size=10";
+        font-bold-italic = "Fira Code Light:size=11";
         vertical-letter-offset = 1.0;
         dpi-aware = false;
         pad = "30x30 center";
@@ -22,7 +22,7 @@
         color = "000000 ffffff";
       };
       colors = {
-        alpha = 0.94;
+        alpha = 0.93;
         background = "000000";
         foreground = "ffffff";
         regular0 = "000000";
