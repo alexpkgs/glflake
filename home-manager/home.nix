@@ -39,22 +39,6 @@
     # EDITOR = "emacs";
   };
 
-  # Enable and configure Bash
-  programs.bash.enable = true;
-  programs.bash.shellAliases = {
-    ll = "ls -l";
-    ff = "fastfetch";
-    fsh = "info='n os wm sh n' fet.sh";
-    doas = "sudo";
-    files = "lf";
-  };
-
-  # Ensure Starship prompt initialization in Bash
-  programs.bash.bashrcExtra = ''
-    # Initialize Starship prompt
-    eval "$(starship init bash)"
-  '';
-
   # Enable Home Manager
   programs.home-manager.enable = true;
 }
