@@ -7,15 +7,18 @@
 
   # Import other configuration files
   imports = [
-    ./mako/default.nix
-    ./foot/default.nix
-    ./rofi/default.nix
-    ./qutebrowser/default.nix
-    ./bash/default.nix
-    ./dunst/default.nix
-    ./starship/default.nix
+    ./nofi/mako/default.nix
+    ./terminals/foot/default.nix
+    ./launchers/rofi/default.nix
+    ./browser/qutebrowser/default.nix
+    ./shells/bash/default.nix
+    ./shells/starship/default.nix
+    ./bar/waybar/default.nix
+    ./fetchs/fastfetch/default.nix
+    ./nofi/dunst/default.nix 
   ];
 
+ 
   # Set the Home Manager state version
   home.stateVersion = "24.05";
 
@@ -23,14 +26,18 @@
   home.packages = [
     pkgs.fastfetch
     pkgs.starship
+    pkgs.swaylock
     pkgs.bash
     pkgs.lsd
+    pkgs.neovim
     pkgs.mako
+    pkgs.fff
+    pkgs.waybar
+    pkgs.dunst
     pkgs.foot
+    pkgs.lf
     pkgs.rofi
     pkgs.qutebrowser
-    pkgs.dunst
-    pkgs.swaylock
   ];
 
   # Define files to be managed by Home Manager
@@ -48,6 +55,6 @@
     # EDITOR = "emacs";
   };
 
-   # Enable Home Manager
+  # Enable Home Manager
   programs.home-manager.enable = true;
 }
