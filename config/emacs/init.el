@@ -96,3 +96,14 @@
   (add-hook 'emacs-startup-hook (lambda ()
                                   (when (display-graphic-p)
                                     (ar/show-welcome-buffer)))))
+
+(setq-default pixel-scroll-precision-mode t
+              fast-but-imprecise-scrolling t
+              mouse-wheel-scroll-amount '(1 ((shift) . 1)) ; one line at a time
+              mouse-wheel-progressive-speed nil ; don't accelerate scrolling
+              mouse-wheel-follow-mouse t ; scroll window under mouse
+              mouse-wheel-tilt-scroll t
+              scroll-margin 7
+              scroll-preserve-screen-position t
+              scroll-conservatively 10)
+
