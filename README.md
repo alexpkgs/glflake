@@ -1,1 +1,2 @@
-Welcome To My Dotfiles (for nix)
+> [!NIXXING]
+> yippe
