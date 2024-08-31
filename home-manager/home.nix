@@ -12,6 +12,8 @@
     ./rofi/default.nix
     ./qutebrowser/default.nix
     ./bash/default.nix
+    ./dunst/default.nix
+    ./swaylock/default.nix
   ];
 
   # Set the Home Manager state version
@@ -28,6 +30,7 @@
     pkgs.rofi
     pkgs.qutebrowser
     pkgs.dunst
+    pkgs.swaylock
   ];
 
   # Define files to be managed by Home Manager
