@@ -1,18 +1,18 @@
-{pkgs, ...}: let
+{ pkgs, ... }: let
   inherit (pkgs) libnotify papirus-icon-theme;
 in {
-  home.packages = [libnotify];
+  home.packages = [ libnotify ];
 
   services.dunst = {
     enable = true;
 
     settings = {
       global = {
-        frame_color = "#8caaee";
-        geometry = "1870x5-25+45";
-        width = 350;
+        frame_color = "#101010";
+        geometry = "300x5+10+45"; 
+        width = 300;
         separator_height = 5;
-        padding = 18;
+        padding = 10;
         horizontal_padding = 24;
         frame_width = 3;
         idle_threshold = 120;
@@ -23,22 +23,23 @@ in {
         markup = "full";
         min_icon_size = 32;
         max_icon_size = 128;
+        shrink = 0;
       };
 
       urgency_low = {
-        background = "#303446";
-        foreground = "#c6d0f5";
+        background = "#101010";
+        foreground = "#ffffff";
       };
 
       urgency_normal = {
-        background = "#303446";
-        foreground = "#c6d0f5";
+        background = "#101010";
+        foreground = "#ffffff";
       };
 
       urgency_critical = {
-        background = "#303446";
-        foreground = "#c6d0f5";
-        frame_color = "#ef9f76";
+        background = "#101010";
+        foreground = "#ffffff";
+        frame_color = "#101010";
       };
     };
   };
