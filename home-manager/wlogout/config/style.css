@@ -24,12 +24,12 @@ button {
 }
 
 button:focus {
-    background-color: rgba(203, 166, 247, 0.7); /* Light purple on focus */
+    background-color: #faf5ef; /* Added missing semicolon */
     background-size: 20%;
 }
 
 button:hover {
-    background-color: rgba(243, 139, 168, 0.7); /* Light pink on hover */
+    background-color: #faf5ef;
     background-size: 20%;
 }
 
@@ -80,3 +80,4 @@ button:hover#reboot {
         background-color: #101010; /* Dark background */
     }
 }
+
