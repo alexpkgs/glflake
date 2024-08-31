@@ -65,6 +65,10 @@
     emacs
     flatpak
     cmus
+    grim
+    slurp
+    wl-clipboard
+    wlr-randr
   ];
 
   # Display manager configuration
