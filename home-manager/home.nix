@@ -15,7 +15,8 @@
     ./shells/starship/default.nix
     ./bar/waybar/default.nix
     ./fetchs/fastfetch/default.nix
-    ./nofi/dunst/default.nix 
+    ./nofi/dunst/default.nix
+    ./shells/zsh/default.nix
   ];
 
  
