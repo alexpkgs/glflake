@@ -1,2 +1,3 @@
 > [!NOTE]
-> you might need to change the name to alex to whatever name you had
+> The Music Folder Is For CMUS
+> TO ADD THE MUSIC DO :add ~/Music
