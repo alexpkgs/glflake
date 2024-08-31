@@ -1,2 +1,2 @@
-> [!NIXXING]
+> [!NOTE]
 > yippe
