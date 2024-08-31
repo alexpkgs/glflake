@@ -70,7 +70,6 @@ do
 done
 
 # -- Startup Applications --
-# riverctl spawn mako
-riverctl spawn dunst
+riverctl spawn mako
 riverctl spawn swww-daemon
 riverctl spawn waybar
