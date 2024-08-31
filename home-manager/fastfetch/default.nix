@@ -6,7 +6,7 @@
     settings = {
       logo = {
         type = "auto";
-        source = "/home/alex/.config/home-manager/fastfetch/tux";
+        source = "/home/alex/.config/home-manager/fastfetch/nixos";
         width = 44;
         height = 15;
       };
