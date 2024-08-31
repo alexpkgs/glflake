@@ -1,83 +1,65 @@
+/* General Styles */
 * {
+    font-size: 16pt;
     background-image: none;
-    font-size: 16px;
-    font-family: 'Fira Code Light', monospace;
 }
 
 window {
-    background-color: transparent;
+    background-image: url("/home/alex/walls/wallpaper.jpg");
 }
 
 button {
-    color: #ffffff;
-    background-color: #101010; /* Dark background */
-    outline: none;
+    color: #FFFFFF;
+    background-color: #101010;
+    outline-style: none;
     border: none;
-    background-repeat: no-repeat;
     background-position: center;
-    background-size: 10%;
+    background-repeat: no-repeat;
+    background-size: 20%;
     border-radius: 0;
     box-shadow: none;
     text-shadow: none;
     animation: gradient_f 20s ease-in infinite;
-    transition: background-color 0.3s cubic-bezier(.55,0.0,.28,1.682);
 }
 
 button:focus {
-    background-color: #faf5ef; /* Added missing semicolon */
-    background-size: 20%;
+    background-color: #3700B3;
+    background-size: 30%;
 }
 
-button:hover {
-    background-color: #faf5ef;
-    background-size: 20%;
-}
-
-button#lock {
+/* Individual Button Styles */
+#lock {
     background-image: url("icons/lock_white.png");
-    border-radius: 0;
+    border-radius: 50px 0 0 0;
+    margin: 30px 0 0 30px;
+    background-size: 50%; /* Adjust size as needed */
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-button#logout {
+#logout {
     background-image: url("icons/logout_white.png");
     border-radius: 0 0 0 50px;
+    margin: 0 0 30px 30px;
+    background-size: 50%; /* Adjust size as needed */
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-button#shutdown {
+#shutdown {
     background-image: url("icons/shutdown_white.png");
-    border-radius: 0;
-    margin: 30px 30px 0 0; /* Adjust margins as needed */
+    border-radius: 0 50px 0 0;
+    margin: 30px 30px 0 0;
+    background-size: 50%; /* Adjust size as needed */
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-button#reboot {
+#reboot {
     background-image: url("icons/reboot_white.png");
-    border-radius: 0;
+    border-radius: 0 0 50px 0;
+    margin: 0 30px 30px 0;
+    background-size: 50%; /* Adjust size as needed */
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-button:focus#lock,
-button:focus#logout,
-button:focus#shutdown,
-button:focus#reboot {
-    margin: 0; /* Reset margins on focus */
-}
-
-button:hover#lock,
-button:hover#logout,
-button:hover#shutdown,
-button:hover#reboot {
-    margin: 0; /* Reset margins on hover */
-}
-
-/* Keyframes for gradient animation (if needed) */
-@keyframes gradient_f {
-    0% {
-        background-color: #101010; /* Dark background */
-    }
-    50% {
-        background-color: #1a1a1a; /* Slightly lighter background */
-    }
-    100% {
-        background-color: #101010; /* Dark background */
-    }
-}
-
