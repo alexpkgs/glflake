@@ -13,7 +13,7 @@
     ./qutebrowser/default.nix
     ./bash/default.nix
     ./dunst/default.nix
-    ./swaylock/default.nix
+    ./wlogout/default.nix
   ];
 
   # Set the Home Manager state version
