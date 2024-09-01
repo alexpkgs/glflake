@@ -22,6 +22,9 @@
  
   # Set the Home Manager state version
   home.stateVersion = "24.05";
+ 
+   # modules
+  astridConfig.windowManagers.river.enable = true;
 
   # Specify packages to install in your environment
   home.packages = [
