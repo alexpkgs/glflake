@@ -7,6 +7,7 @@
   imports =
     [ # Include the hardware scan results.
       ./hardware-configuration.nix
+      ./intel-drivers.nix
     ];
 
   # Bootloader configuration
