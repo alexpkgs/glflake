@@ -69,6 +69,7 @@
     slurp
     wl-clipboard
     wlr-randr
+    cava
   ];
 
   # Display manager configuration
