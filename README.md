@@ -7,3 +7,6 @@ Launcher: Rofi
 
 # River
 <img src=./ss/image.png>
+
+
+# Hyprland (SOON)
