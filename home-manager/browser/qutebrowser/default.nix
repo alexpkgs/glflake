@@ -39,8 +39,8 @@ in {
     };
     settings = {
       url = {
-        default_page = "https://www.google.com";
-        start_pages = ["https://www.google.com"];
+        default_page = "https://startpage.duckduckgo.com";
+        start_pages = ["https://startpage.duckduck.com"];
       };
       editor.command = ["kitty" "-e" "nvim" "{file}"];
       content.javascript.clipboard = "access-paste";
