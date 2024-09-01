@@ -1,4 +1,4 @@
 > [!NOTE]
-> The Music Folder Is For CMUS
-
-> TO ADD THE MUSIC DO :add ~/Music
+> you can use the config
+>
+> [cmus] you need to add the music by doing :add ~/Music
