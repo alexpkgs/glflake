@@ -17,6 +17,8 @@
     ./fetchs/fastfetch/default.nix
     ./nofi/dunst/default.nix
     ./shells/zsh/default.nix
+    ./shells/fish/default.nix
+    ./wm/river/default.nix
   ];
 
  
