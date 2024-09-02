@@ -32,8 +32,6 @@
   home.packages = [
     pkgs.fastfetch
     pkgs.starship
-    pkgs.hypridle
-    pkgs.hyprland
     pkgs.bash
     pkgs.lsd
     pkgs.mako
