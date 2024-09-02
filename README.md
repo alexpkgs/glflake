@@ -13,3 +13,6 @@ Launcher: Rofi
 
 # Hyprland (same thing tbh)
 <img src=./ss/20240901_23h23m22s_grim.png>
+
+
+### Thank You Astrid For Helping Me For The River Config For Home-Manager
