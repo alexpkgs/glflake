@@ -4,10 +4,8 @@
     xwayland.enable = true;
     systemd.enable = true;
     plugins = [
-      #shgnjk
     ];
     extraConfig = ''
-
       #variables
       $mainMod = SUPER
       $terminal = foot
@@ -31,6 +29,9 @@
       exec-once = nm-applet
       exec-once = wl-paste --type text --watch cliphist store & wl-paste --type image --watch cliphist store & wl-paste --watch cliphist store
       exec-once = systemd
+
+      # nvidia
+      source=./land/nvidialand.conf
 
       #opacity window rules
       windowrulev2 = opacity 0.8, title:(FL Studio)
@@ -92,10 +93,6 @@
       bindm = $mainMod, mouse:272, movewindow
       bindm = $mainMod, mouse:273, resizewindow
 
-      #looksmaxxing
-      plugin {
-
-      }
 
       input {
         kb_layout = us
