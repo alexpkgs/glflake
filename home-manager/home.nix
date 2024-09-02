@@ -32,16 +32,14 @@
   home.packages = [
     pkgs.fastfetch
     pkgs.starship
-    pkgs.swaylock
+    pkgs.hypridle
+    pkgs.hyprland
     pkgs.bash
     pkgs.lsd
-    pkgs.neovim
     pkgs.mako
-    pkgs.fff
     pkgs.waybar
     pkgs.dunst
     pkgs.foot
-    pkgs.lf
     pkgs.rofi
     pkgs.qutebrowser
   ];
