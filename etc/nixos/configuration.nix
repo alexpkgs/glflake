@@ -1,24 +1,38 @@
-# This configuration file defines what should be installed on your system.
-# Refer to the configuration.nix(5) man page and the NixOS manual ('nixos-help') for more information.
-
 { config, pkgs, ... }:
 
 {
   imports =
-    [ # Include the hardware scan results.
+    [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./intel-drivers.nix
     ];
 
-  # Bootloader configuration
+  # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Networking configuration
-  networking.hostName = "glove";
+  # Networking
+  networking.hostName = "glove"; # Define your hostname.
   networking.networkmanager.enable = true;
 
-  # Time zone and locale settings
+  # Configure network proxy if necessary
+  # networking.proxy.default = "http://user:password@proxy:port/";
+  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+
+  # Services
+  services.xserver.enable = true;
+  services.xserver.layout = "us";
+  services.xserver.xkbVariant = "";
+
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
+
+  programs.river.enable = true;
+  programs.hyprland.enable = true;
+  
+  services.xserver.windowManager.cwm.enable = true;
+
+  # Time zone and internationalization
   time.timeZone = "America/New_York";
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.extraLocaleSettings = {
@@ -33,37 +47,29 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # X11 configuration
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
-  };
-
-  # User account configuration
+  # Users
   users.users.alex = {
     isNormalUser = true;
     description = "alex";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
   };
+  
   services.getty.autologinUser = "alex";
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # System packages
+  # Environment packages
   environment.systemPackages = with pkgs; [
     vim
     sddm
-    river
     firefox
-    waybar
     wayland
     wlroots
-    dunst
     swww
     git
     emacs
+    dunst
     flatpak
     cmus
     grim
@@ -71,19 +77,16 @@
     wl-clipboard
     wlr-randr
     cava
+    xwayland
   ];
 
-  # Display manager configuration
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
-
-  # Flakes and nix settings
+  # Flakes and nix
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # Flatpak configuration
+  # Flatpak
   services.flatpak.enable = true;
 
-  # PipeWire configuration
+  # PipeWire
   services.pipewire = {
     enable = true;
     alsa = {
@@ -92,9 +95,11 @@
     };
     pulse.enable = true;
   };
+  
+  # Security
   security.rtkit.enable = true;
 
-
-  # System state version
-  system.stateVersion = "24.05"; # Set this to the NixOS release version you installed
+  # State version
+  system.stateVersion = "24.05"; # Did you read the comment? 
 }
+
