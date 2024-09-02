@@ -11,4 +11,5 @@ Launcher: Rofi
 <img src=./ss/image.png>
 
 
-# Hyprland (SOON)
+# Hyprland (same thing tbh)
+<img src=./ss/20240901_23h23m22s_grim.png>
