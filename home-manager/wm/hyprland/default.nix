@@ -29,12 +29,12 @@
       exec-once = nm-applet
       exec-once = wl-paste --type text --watch cliphist store & wl-paste --type image --watch cliphist store & wl-paste --watch cliphist store
       exec-once = systemd
+      exec-once = hypridle
 
       # nvidia
       source=./land/nvidialand.conf
 
       #opacity window rules
-      windowrulev2 = opacity 0.8, title:(FL Studio)
       #workspaces window rules
       #workspace rules
       workspace=10, monitor:HDMI-A-1, default:true
@@ -114,8 +114,8 @@
       }
 
       general {
-        gaps_in = 4
-        gaps_out = 6
+        gaps_in = 15
+        gaps_out = 15
         border_size = 0
         col.active_border = #ffffff;
         col.inactive_border = #fffff;
