@@ -75,6 +75,7 @@
     wlr-randr
     cava
     xwayland
+    fira-code
   ];
 
   # Flakes and nix
