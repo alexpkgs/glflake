@@ -12,5 +12,6 @@ if command -v git &> /dev/null; then
 else
   echo "git is not installed please install git (git gud)"
   echo "Example: nix-shell -p git"
+  echo "fun fact do not nix-env"
   exit
 fi
