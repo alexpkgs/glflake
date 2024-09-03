@@ -6,18 +6,18 @@ if grep -qi nixos /etc/os-release; then
   echo "-----"
 else
   echo "You need to use NixOS to use these dotfiles."
-  echo "Please visit https://nixos.org/ for more information."
+  echo "go get the iso now https://nixos.org/"
   exit 1
 fi
 
 # Check if Git is installed
 if command -v git &> /dev/null; then
-  echo "Git is installed, thank you!"
+  echo "thank you for gitting gud"
   echo "-----"
 else
-  echo "Git is not installed. Please install Git to proceed."
+  echo "you need git???"
   echo "Example: nix-shell -p git"
-  echo "Note: Do not use 'nix-env' to install packages."
+  echo "do not the nix-env"
   exit 1
 fi
 
