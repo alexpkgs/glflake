@@ -28,10 +28,7 @@
   services.displayManager.sddm.wayland.enable = true;
 
   programs.river.enable = true;
-  programs.hyprland.enable = true;
   
-  services.xserver.windowManager.cwm.enable = true;
-
   # Time zone and internationalization
   time.timeZone = "America/New_York";
   i18n.defaultLocale = "en_US.UTF-8";
