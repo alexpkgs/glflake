@@ -24,6 +24,9 @@
  
   # Set the Home Manager state version
   home.stateVersion = "24.05";
+  
+  # annyoing stuff to remove 
+  home.enableNixpkgsReleaseCheck = false;
  
    # modules
   astridConfig.windowManagers.river.enable = true;
