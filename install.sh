@@ -3,6 +3,7 @@ if [ -n "$(grep -i nixos < /etc/os-release)" ]; then
   echo "-----"
 else
   echo "i swear of god go use nixos if you wanna use these dotfiles"
+  echo "go to https://nixos.org/"
   exit
 fi
 
@@ -15,3 +16,4 @@ else
   echo "fun fact do not nix-env"
   exit
 fi
+
