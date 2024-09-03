@@ -16,3 +16,6 @@ Launcher: Rofi
 
 
 ### Thank You Astrid For Helping Me For The River Config For Home-Manager
+
+> [!CAUTION]
+> this config works with my hardware if you wanna try, try it at your own risk! but i think it should work
