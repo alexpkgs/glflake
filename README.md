@@ -1,4 +1,4 @@
-### My Dotfiles (For NixOS)
+### welcome to my wacky flake for nixos
 [![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 
 Editor: [Emacs](https://github.com/alexzsk/glomacs)
