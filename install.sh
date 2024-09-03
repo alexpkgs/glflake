@@ -32,19 +32,24 @@ mv juno ~/Music
 mv underscores ~/Music
 cd ..
 mv walls ~/
+swww img ~/walls/wallpaper.jpg
 
-# Update NixOS configuration
+# upd nixos
 cd /etc/nixos || exit
 sudo rm -rf configuration.nix
 sudo mv configuration.nix /etc/nixos/
 sudo mv intel-drivers.nix /etc/nixos/
 
 
-# Add and update Nix channels
+# nix stuff and emacs
 nix-channel --add https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz home-manager
 nix-channel --update
+git clone https://github.com/alexzsk/glomacs.git
+cd glomacs
+mv emacs ~/.config
+nix profile install nixpkgs#fira-code
 
-# Install Home Manager
+# hm
 if nix-shell '<home-manager>' -A install; then
   echo "Hm installed"
 else
@@ -52,7 +57,7 @@ else
   exit 1
 fi
 
-# Apply Home Manager configuration
+# applu hm
 if home-manager switch; then
   echo "home-manager appiled"
 else
@@ -60,7 +65,7 @@ else
   exit 1
 fi
 
-# Apply the NixOS configuration
+# nixxing
 if sudo nixos-rebuild switch; then
   echo "updated"
 else
