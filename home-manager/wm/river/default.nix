@@ -24,7 +24,7 @@
       settings = {
         map.normal."${config.astridConfig.windowManagers.river.modKey} Return" = "spawn foot";
         map.normal."${config.astridConfig.windowManagers.river.modKey} q" = "close";
-        map.normal."${config.astridConfig.windowManagers.river.modKey} d" = "spawn 'rofi -show run'";
+        map.normal."${config.astridConfig.windowManagers.river.modKey} d" = "spawn 'rofi -show";
         map.normal."${config.astridConfig.windowManagers.river.modKey}+Shift q" = "exit";
       };
 
