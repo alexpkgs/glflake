@@ -7,12 +7,12 @@
       ./intel-drivers.nix
     ];
 
-  # Bootloader.
+  # Bootloader
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Networking
-  networking.hostName = "glove"; # Define your hostname.
+  networking.hostName = "lenovo"; # Define your hostname.
   networking.networkmanager.enable = true;
 
   # Configure network proxy if necessary
@@ -28,7 +28,7 @@
   services.displayManager.sddm.wayland.enable = true;
 
   programs.river.enable = true;
-  
+
   # Time zone and internationalization
   time.timeZone = "America/New_York";
   i18n.defaultLocale = "en_US.UTF-8";
@@ -67,7 +67,6 @@
     git
     emacs
     dunst
-    flatpak
     cmus
     grim
     slurp
@@ -81,8 +80,6 @@
   # Flakes and nix
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # Flatpak
-  services.flatpak.enable = true;
 
   # PipeWire
   services.pipewire = {
@@ -93,11 +90,19 @@
     };
     pulse.enable = true;
   };
-  
+
   # Security
   security.rtkit.enable = true;
 
-  # State version
+# cache stuff ig 
+nix.optimise.automatic = true;
+nix.settings.auto-optimise-store = true;
+
+nix.gc = {
+  automatic = true;
+  options = "--delete-older-than 7d";
+};
+ 
+   # State version
   system.stateVersion = "24.05"; # Did you read the comment? 
 }
-
