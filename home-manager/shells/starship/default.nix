@@ -1,18 +1,20 @@
+{ pkgs, ... }:
+
 {
   programs.starship = {
     enable = true;
     settings = {
       character = {
-        success_symbol = "[>](fg:#cdb6dd)";
-        error_symbol = "[x](fg:#d59076)";
+        success_symbol = "[](fg:#fffff)";
+        error_symbol = "[ ](fg:#d59076)";
         vimcmd_symbol = "[<](fg:#d59076)";
       };
       git_status = {
-        ahead = ">";
+        ahead = "";
         behind = "<";
         diverged = "<>";
-        renamed = "r";
-        deleted = "x";
+        renamed = "";
+        deleted = "";
       };
       git_commit = {
         tag_symbol = " tag ";
@@ -20,7 +22,7 @@
       time = {
         disabled = false;
         style = "green";
-        format = "[$time]($style) ";
+        format = "($style)";
       };
     };
   };
