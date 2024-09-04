@@ -1,6 +1,6 @@
 configuration {
 	modi: "drun";
-	font:	"JetBrains Mono Nerd Font 9";
+	font:	"Fira Code 9";
 	display-drun: "";
 	sidebar-mode: false;
 }
