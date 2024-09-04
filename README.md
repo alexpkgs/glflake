@@ -19,3 +19,7 @@ Launcher: Rofi
 
 > [!CAUTION]
 > this config works with my hardware if you wanna try, try it at your own risk! but i think it should work also im using intel
+
+### Fonts You will need
+1. Fira Code [nix profile install nixpkgs#fira-code] or put it in your configuration.nix
+2. [Nerd Fonts](https://www.nerdfonts.com/#home)
