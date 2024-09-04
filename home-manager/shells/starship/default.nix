@@ -6,8 +6,8 @@
     settings = {
       character = {
         success_symbol = "[](fg:#fffff)";
-        error_symbol = "[ ](fg:#d59076)";
-        vimcmd_symbol = "[<](fg:#d59076)";
+        error_symbol = "[ ](fg:#fffff)";
+        vimcmd_symbol = "[<](fg:#fffff)";
       };
       git_status = {
         ahead = "";
