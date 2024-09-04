@@ -15,7 +15,7 @@
     borderSize = 0;
     borderRadius = 0;
     defaultTimeout = 5000;
-    font = "uzura_font 12px";
+    font = "Fira Code 12px";
 
     extraConfig = ''
       format=<b>%s</b>\n\n%b
