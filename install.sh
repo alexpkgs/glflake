@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # Check if the system is NixOS
 if grep -qi nixos /etc/os-release; then
   echo "This is NixOS"
