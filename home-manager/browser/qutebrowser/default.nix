@@ -1,6 +1,6 @@
 let
   palette = {
-    background = "#000000";  # Black
+    background = "#1c1c1c";  # yum
     background-alt = "#111111";  # Slightly lighter black
     background-attention = "#222222";  # Dark grey
     border = "#555555";  # Grey
@@ -39,19 +39,18 @@ in {
     };
     settings = {
       url = {
-        default_page = "https://startpage.duckduckgo.com";
-        start_pages = ["https://startpage.duckduck.com"];
+        default_page = "https://start.duckduckgo.com";
+        start_pages = ["https://start.duckduck.com"];
       };
-      editor.command = ["kitty" "-e" "nvim" "{file}"];
-      content.javascript.clipboard = "access-paste";
+
       fonts = {
-        default_family = ["Fira Code Light" "Fira Code Light"];
+        default_family = ["Fira Code" "Fira Code"];
         default_size = "13px";
         web.family = {
-          sans_serif = "Fira Code Light";
-          serif = "Fira Code Light";
-          fixed = "Fira Code Light";
-          standard = "Fira Code Light";
+          sans_serif = "Fira Code";
+          serif = "Fira Code";
+          fixed = "Fira Code";
+          standard = "Fira Code";
         };
       };
       content.blocking.method = "both";
