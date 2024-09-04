@@ -5,10 +5,10 @@
       main = {
         app-id = "foot";
         title = "foot";
-        font = "Fira Code Light:size=10,mplus10:size=10";
-        font-bold = "Fira Code Light:size=10:size=10";
-        font-italic = "Fira Code Light:size=10,size=10";
-        font-bold-italic = "Fira Code Light:size=11";
+        font = "Fira Code:size=10,mplus10:size=10";
+        font-bold = "Fira Code:size=10:size=10";
+        font-italic = "Fira Code:size=10,size=10";
+        font-bold-italic = "Fira Code:size=11";
         vertical-letter-offset = 1.0;
         dpi-aware = false;
         pad = "30x30 center";
