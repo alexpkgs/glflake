@@ -1,7 +1,7 @@
 ### welcome to my wacky flake for nixos
 [![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 
-|                          |             NixOS 24.05               |
+|         INFO                  |             NixOS 24.05               |
 |--------------------------|:-------------------------------------:|
 | **Window Manager**  |   [River](https://codeberg.org/river/river)|
 | **Terminal Emulator**    |   [Foot](https://codeberg.org/dnkl/foot) |
