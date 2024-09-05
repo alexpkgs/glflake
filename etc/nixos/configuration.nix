@@ -71,6 +71,8 @@
     cava
     xwayland
     fira-code
+    fontforge
+    nerd-font-patcher
   ];
 
   # Flakes and nix
