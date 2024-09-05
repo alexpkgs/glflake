@@ -1,9 +1,9 @@
 ### welcome to my wacky flake for nixos
 [![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 
-|                          |             NixOS 23.11               |
+|                          |             NixOS 24.05               |
 |--------------------------|:-------------------------------------:|
-| **Desktop Environment**  |   [River](https://codeberg.org/river/river)|
+| **Window Manager**  |   [River](https://codeberg.org/river/river)|
 | **Terminal Emulator**    |   [Foot](https://codeberg.org/dnkl/foot) |
 | **Display Server**       |   [Wayland](https://wayland.freedesktop.org)     |
 | **Application Launcher** |   [Rofi](https://github.com/davatorium/rofi)  |
