@@ -8,7 +8,7 @@
 | **Display Server**       |   [Wayland](https://wayland.freedesktop.org)     |
 | **Application Launcher** |   [Rofi](https://github.com/davatorium/rofi)  |
 | **Shell**                |   [Bash](https://www.gnu.org/software/bash/)   |
-| **Text Editor**          |   [Emacs](https://www.gnu.org/software/emacs/)         |
+| **Text Editor**          |   [Emacs](https://github.com/alexzsk/glomacs)         |
 
 
 
