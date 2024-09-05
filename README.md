@@ -1,4 +1,4 @@
-### welcome to my wacky flake for nixos
+### Welcome to my wacky nixos configs
 [![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 
 |         INFO                  |             NixOS 24.05               |
