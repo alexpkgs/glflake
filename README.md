@@ -1,9 +1,15 @@
 ### welcome to my wacky flake for nixos
 [![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 
-Editor: [Emacs](https://github.com/alexzsk/glomacs)
+|                          |             NixOS 23.11               |
+|--------------------------|:-------------------------------------:|
+| **Desktop Environment**  |   [River](https://codeberg.org/river/river)|
+| **Terminal Emulator**    |   [Foot](https://codeberg.org/dnkl/foot) |
+| **Display Server**       |   [Wayland](https://wayland.freedesktop.org)     |
+| **Application Launcher** |   [Rofi](https://github.com/davatorium/rofi)  |
+| **Shell**                |   [Bash](https://www.gnu.org/software/bash/)   |
+| **Text Editor**          |   [Emacs](https://www.gnu.org/software/emacs/)         |
 
-Music Player: cmus or spotify
 
 Launcher: Rofi
 
