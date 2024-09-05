@@ -11,7 +11,6 @@
 | **Text Editor**          |   [Emacs](https://www.gnu.org/software/emacs/)         |
 
 
-Launcher: Rofi
 
 # River
 <img src=./ss/image.png>
