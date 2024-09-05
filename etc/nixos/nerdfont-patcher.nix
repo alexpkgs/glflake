@@ -1,5 +1,5 @@
 environment.systemPackages = with pkgs; [
  fontforge
  nerd-font-patcher
- fira-code
 ];
+ # litte patch for nerd font ;)
