@@ -34,3 +34,5 @@ Flakes That Inprised Me:
 [dxflake](https://github.com/dxcently/dxflake/tree/main)
 
 [sakshatshinde nix config](https://github.com/sakshatshinde/nix-config)
+
+[Astrid's Flake (thanks astrid for helping me with the river config)](https://github.com/eepy-goddess/astrid-flake/tree/main)
