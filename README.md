@@ -28,3 +28,8 @@
 ### Fonts You will need
 1. Fira Code [nix profile install nixpkgs#fira-code] or put it in your configuration.nix
 2. [Nerd Fonts](https://www.nerdfonts.com/#home)
+
+Flakes That Inprised Me: 
+
+[dxflake](https://github.com/dxcently/dxflake/tree/main)
+[sakshatshinde nix config](https://github.com/sakshatshinde/nix-config)
