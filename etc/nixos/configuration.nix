@@ -55,7 +55,6 @@
   # Environment packages
   environment.systemPackages = with pkgs; [
     vim
-    gdm
     firefox
     wayland
     wlroots
