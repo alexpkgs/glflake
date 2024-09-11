@@ -72,6 +72,7 @@
     fira-code
     fontforge
     nerd-font-patcher
+    zellij
   ];
 
   # Flakes and nix
