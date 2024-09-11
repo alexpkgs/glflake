@@ -68,6 +68,7 @@ riverctl map normal None Print spawn 'grim -g "$(slurp)" - | wl-copy'
  riverctl hide-cursor when-typing enabled
  riverctl focus-follows-cursor always
  riverctl set-cursor-warp on-focus-change
+ riverctl map normal Super F toggle-fullscreen
       '';
     };
   };
