@@ -38,6 +38,8 @@ sudo rm -rf configuration.nix
 sudo mv configuration.nix /etc/nixos/
 sudo mv intel-drivers.nix /etc/nixos/
 
+# gdm fix just in case if it gets smh wrong
+nix profile install flake:nixpkgs#legacyPackages.x86_64-linux.gdm --priority 6
 
 # nix stuff and emacs
 nix-channel --add https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz home-manager
