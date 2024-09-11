@@ -20,7 +20,7 @@
   services.xserver.layout = "us";
   services.xserver.xkbVariant = "";
 
-  services.displayManager.sddm.enable = true;
+  services.xserver.displayManager.gdm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
 
   programs.river.enable = true;
@@ -55,7 +55,7 @@
   # Environment packages
   environment.systemPackages = with pkgs; [
     vim
-    sddm
+    gdm
     firefox
     wayland
     wlroots
@@ -95,6 +95,9 @@
 # cache stuff ig 
 nix.optimise.automatic = true;
 nix.settings.auto-optimise-store = true;
+
+# pipewire fix
+hardware.pulseaudio.enable = false;
 
 nix.gc = {
   automatic = true;
