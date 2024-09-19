@@ -1,7 +1,9 @@
 ### Welcome to my wacky nixos configs
 [![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 
-  <img src="https://img.shields.io/github/languages/top/alexpkgs/glflake?style=for-the-badge"/>
+<img src="https://img.shields.io/github/languages/top/alexpkgs/glflake?style=for-the-badge"/>
+
+
 |         INFO                  |             NixOS 24.05               |
 |--------------------------|:-------------------------------------:|
 | **Window Manager**  |   [River](https://codeberg.org/river/river)|
